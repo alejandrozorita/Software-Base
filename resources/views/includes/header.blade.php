@@ -38,6 +38,11 @@
 <link href="assets/css/magic_space.css" rel="stylesheet" type="text/css"/>
 <!-- END CSS TEMPLATE -->
 
+<!-- Start of soporteaedv Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","soporteaedv.zendesk.com");
+/*]]>*/</script>
+<!-- End of soporteaedv Zendesk Widget script -->
+
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -167,21 +172,13 @@
   <div class="page-sidebar" id="main-menu">
     <!-- BEGIN MINI-PROFILE -->
     <div class="page-sidebar-wrapper scrollbar-dynamic" id="main-menu-wrapper">
-      <div class="user-info-wrapper">
+      <div class="user-info-wrapper m-b-30">
         <div class="profile-wrapper"> <img src="assets/img/profiles/avatar.jpg"  alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69" /> </div>
         <div class="user-info">
           <div class="greeting">Welcome</div>
           <div class="username">John <span class="semi-bold">Smith</span></div>
-          <div class="status">Status<a href="#">
-            <div class="status-icon green"></div>
-            Online</a></div>
         </div>
       </div>
-      <!-- END MINI-PROFILE -->
-      <!-- BEGIN SIDEBAR MENU -->
-      <p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
-
-
       @include('includes.menu')
 
 
