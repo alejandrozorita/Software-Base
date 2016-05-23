@@ -368,7 +368,7 @@
         "lists": true,
         "html": false,
         "link": true,
-        "image": true,
+        "image": false,
         events: {},
         parserRules: {
             classes: {
@@ -423,7 +423,7 @@
                 "div": 1
             }
         },
-        stylesheets: ["./assets/plugins/bootstrap-wysihtml5/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
+        stylesheets: ["../assets/plugins/bootstrap-wysihtml5/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
         locale: "en"
     };
 
@@ -458,7 +458,7 @@
                 cancel: "Cancel"
             },
             image: {
-                insert: "Insert image",
+                insert: "Insertar Imagen",
                 cancel: "Cancel"
             },
             html: {

@@ -70,26 +70,26 @@
 }
 @media only screen and (min-width: 320px) {
 	.superbox-list {
-		width:50%;
+		width:49%;
 	}
 }
 @media only screen and (min-width: 486px) {
 	.superbox-list {
-		width:25%;
+		width:32%;
 	}
 }
 @media only screen and (min-width: 768px) {
 	.superbox-list {
-		width:16.66666667%;
+		width:18.66666667%;
 	}
 }
 @media only screen and (min-width: 1025px) {
 	.superbox-list {
-		width:12.5%;
+		width:13.5%;
 	}
 }
 @media only screen and (min-width: 1824px) {
 	.superbox-list {
-		width:12.5%;
+		width:12%;
 	}
 }

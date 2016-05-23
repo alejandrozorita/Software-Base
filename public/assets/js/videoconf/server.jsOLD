@@ -1,0 +1,16 @@
+var serverObject = {
+    addr:     "aedv.es",
+    port:   "8001",
+    protocol:   "https://"
+};
+serverObject.ip = serverObject.protocol+serverObject.addr+":"+serverObject.port;
+serverObject.status = serverObject.ip+"/status";
+serverObject.confirm = serverObject.ip+"/confirm/";
+serverObject.set_word = serverObject.ip+"/room/set_word";
+serverObject.has_word = serverObject.ip+"/room/has_word";
+serverObject.files = serverObject.ip+"/files";
+serverObject.chat = serverObject.ip+"/chat";
+serverObject.room = serverObject.ip+"/room/";
+serverObject.pub_link = serverObject.ip+"/file/get/";
+serverObject.create = serverObject.ip+"/room/create";
+serverObject.file = serverObject.ip+"/file";

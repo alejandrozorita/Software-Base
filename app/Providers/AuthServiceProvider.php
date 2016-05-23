@@ -14,6 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'App\Model' => 'App\Policies\ModelPolicy',
+        'App\File' => 'App\policies\FilePolicy',
     ];
 
     /**
@@ -25,6 +26,10 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(GateContract $gate)
     {
         $this->registerPolicies($gate);
+
+        /*$gate->define('ver_ficheros', function($user, $file){
+            return $user->id === $file->user_id;
+        });*/
 
         //
     }

@@ -24,7 +24,7 @@ transition: border 0.2s linear 0s;
 .check-default,.check-success,.check-primary, .check-info, .check-warning, .check-danger {
 	display:inline-block;
 }
-.check-default label,.check-success label,.check-primary label, .check-info label, .check-warning label, .check-danger label {
+.check-default label,.check-success label,.check-primary label, .check-info label, .check-warning label, .check-danger label , .check-other label{
 	display:inline-block;
 	position:relative;
 	top:-4px;
@@ -292,6 +292,7 @@ table th .checkbox label {
 	background-color:#0090D9;
 	border:1px solid #0090D9;
 }
+
 .checkbox.check-success input[type=checkbox]:checked + label::after {
 	color:#fff;
 }
@@ -325,6 +326,13 @@ table th .checkbox label {
 	border:1px solid #F35958;
 }
 .checkbox.check-danger input[type=checkbox]:checked + label::after {
+	color:#fff;
+}
+.checkbox.check-other input[type=checkbox]:checked + label:before {
+	background-color:#8F458F;
+	border:1px solid #8F458F;
+}
+.checkbox.check-other input[type=checkbox]:checked + label::after {
 	color:#fff;
 }
 

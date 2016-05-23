@@ -2,17 +2,17 @@
 $(document).ready(function() {
 			var selectedItems=0;
 			//Table Row Click Event
-			$('.clickable').click( function() {
+			/*$('.clickable').click( function() {
 				$('#inbox-wrapper').addClass('animated fadeOut');
-				$('#inbox-wrapper').hide();					
-				$('#preview-email-wrapper').addClass('animated fadeIn ');			
-				$('#preview-email-wrapper').show();			
-				$('.page-title').show();	
+				$('#inbox-wrapper').hide();
+				$('#preview-email-wrapper').addClass('animated fadeIn ');
+				$('#preview-email-wrapper').show();
+				$('.page-title').show();
 				//Load email details
-				$('#inbox-wrapper').removeClass('animated fadeOut');			
-				$('#inbox-wrapper').removeClass('animated fadeIn');			
+				$('#inbox-wrapper').removeClass('animated fadeOut');
+				$('#inbox-wrapper').removeClass('animated fadeIn');
 			});
-			
+			*/
 			//Back Button Event 
 			$('#btn-back').click( function() {							
 				$('#inbox-wrapper').addClass('animated fadeIn');

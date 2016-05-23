@@ -82,6 +82,15 @@ you can use the generic selector below, but it's slower:
 .icon-custom-home:before {
 	content: "\e00e";
 }
+.icon-custom-mensajes:before {
+	content: url('../../assets/img/icon/mensajes.png');
+}
+.icon-custom-documentos:before {
+	content: url('../../assets/img/icon/documentos.png');
+}
+.icon-custom-pacientes:before {
+	content: url('../../assets/img/icon/pacientes.png');
+}
 .icon-custom-gallery:before {
 	content: "\e00f";
 }

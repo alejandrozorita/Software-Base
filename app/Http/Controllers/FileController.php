@@ -6,17 +6,35 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Requests\FileRequest;
+use App\Repositorios\FileRepo;
+use App\File;
 
 class FileController extends Controller
 {
+
+    //protected $filesRepo;
+
+     /**
+     *
+     */
+    //public function __construct(FilesRepo $filesRepo)
+    //{ 
+    //    $this->filesRepo = $filesRepo;
+    //}
+
+
     /**
      * Enseñamos los ficheros.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    { 
-        return view('files.new');
+    public function index(Request $request)
+    {
+        //$datos_vista['ficheros'] = $this->filesRepo->buscar_todos();
+
+        $datos_vista['ficheros'] = File::where('user_id', $request->user()->id)->get();
+
+        return view('files.index', compact('datos_vista'));
     }
 
     /**
@@ -26,9 +44,8 @@ class FileController extends Controller
      */
     public function create()
     {
-        return 'create';
-    }
-
+        return view('files.new');
+    } 
     /**
      * Guardamos un nuevo fichero.
      *
@@ -37,18 +54,16 @@ class FileController extends Controller
      */
     public function store(FileRequest $request)
     {
-        
-
         $request->user()->files()->create([
             'user_id' => $request->user()->id, 
             'user_recibe' => 2,
             'asunto' => $request->asunto,
             'cuerpo' => $request->cuerpo,
             'tipo' => $request->tipo,
-            'url' => route('ficheros'),
+            'url' => route('ficheros.index'),
             ]);
- 
-        return 'subido';
+
+        return redirect(route('ficheros.index'))->with('success', 'Fichero subido');
     }
 
     /**
@@ -68,9 +83,12 @@ class FileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($file_id)
     {
-        return 'edit';
+        return view('files.edit',[
+            'file' => File::find($file_id)
+            ]);
+
     }
 
     /**
@@ -80,9 +98,13 @@ class FileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$file_id)
     {
-        return 'update';
+
+        $file = File::find($file_id);
+        $this->authorize('owner',$file);
+        $file->update($request->all());
+        return redirect(route('ficheros.index'))->with('success', 'Fichero subido'); 
     }
 
     /**

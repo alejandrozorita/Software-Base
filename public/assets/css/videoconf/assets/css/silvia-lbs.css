@@ -1,0 +1,115 @@
+.scroller.scrollbar-dynamic, .chat-messages.scrollbar-dynamic  {
+	margin-right: 0 !important;
+}
+
+.fa.fa-file-pdf-o {
+    float: left;
+    font-size: 26px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-image-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-archive-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-word-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.nom-usr {
+    float: left;
+    margin: 0;
+    padding: 1%;
+}
+td {
+    width: 50%;
+}
+.nom-fic {
+    margin: 0 auto;
+}
+.desc {
+    float: right;
+}
+.nomb-fich {
+    float: left;
+    margin: 0 auto;
+}
+.nomb-usur {
+    color: #bdbdbd;
+    float: left;
+    font-size: 9px;
+    margin: 0 auto;
+    padding: 2% 1% 1%;
+}
+
+.nomb-usuri {
+    color: #bdbdbd;
+    float: left;
+    margin: 0 auto;
+}
+
+.nomb-usurio {
+    color: #bdbdbd;
+}
+
+.reload {
+    left: 36% !important;
+    position: relative;
+    vertical-align: middle;
+}
+.remove {
+    left: 23% !important;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.form-control {
+    width: 19%;
+}
+.form-control {
+    float: left;
+}
+
+.btn-cons {
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    min-width: 8%;
+}
+
+.table {
+    float: left !important;
+    width: 50% !important;
+}
+
+.btn.btn-block.btn-primary {
+    float: left;
+    margin-right: 2%;
+    width: 50% !important;
+}
+
+td {
+    height: 48px !important;
+}
+
+.btn.btn-primary.btn-cons {
+    width: 16%;
+}
+
+.enc_input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

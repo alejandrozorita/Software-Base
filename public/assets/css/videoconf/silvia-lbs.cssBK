@@ -1,0 +1,398 @@
+
+.fa.fa-file-pdf-o {
+    float: left;
+    font-size: 26px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-image-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-archive-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.fa.fa-file-word-o {
+    float: left;
+    font-size: 25px;
+    padding: 0 2%;
+    vertical-align: middle;
+}
+.nom-usr {
+    float: left;
+    margin: 0;
+    padding: 1%;
+}
+td {
+    width: 50%;
+}
+.nom-fic {
+    margin: 0 auto;
+}
+.desc {
+    float: right;
+}
+.nomb-fich {
+    float: left;
+    margin: 0 auto;
+}
+.nomb-usur {
+    color: #bdbdbd;
+    float: left;
+    font-size: 9px;
+    margin: 0 auto;
+    padding: 2% 1% 1%;
+}
+
+.nomb-usuri {
+    color: #bdbdbd;
+    float: left;
+    margin: 0 auto;
+}
+
+.nomb-usurio {
+    color: #bdbdbd;
+}
+
+.reload {
+    left: 36% !important;
+    position: relative;
+    vertical-align: middle;
+}
+.remove {
+    left: 23% !important;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.form-control {
+    width: 50% !important;
+}
+.form-control {
+    float: left;
+}
+
+.btn-cons {
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    min-width: 8%;
+}
+
+.btn.btn-block.btn-primary {
+    float: left;
+    margin-right: 2%;
+    width: 100% !important;
+    margin-bottom: 2%;
+
+
+}
+
+td {
+    height: 80px !important;
+}
+
+
+.btn.btn-primary.btn-cons {
+    width: 25%;
+    font-size: 0.8rem;
+}
+
+table {
+    margin-top: 4%;
+}
+
+.btn.btn-success.btn-cons {
+    padding:7px 0 9px 3px;
+}
+
+.btn-primary {
+    background-color: #2e7ae0 !important;
+}
+
+.tiles.white.m-b-10 {
+    #height: 559px;
+}
+
+/*chat*/
+
+.shout_box {
+    background: #627bae none repeat scroll 0 0;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 1%;
+    width: 260px;
+    z-index: 9;
+}
+.shout_box .chat .fa.fa-times {
+    background: rgba(0, 0, 0, 0) url("images/close_btn.png") no-repeat scroll 0 0;
+    float: right;
+    height: 15px;
+    width: 15px;
+}
+.shout_box .chat .fa.fa-times:hover {
+    background: rgba(0, 0, 0, 0) url("images/close_btn.png") no-repeat scroll 0 -16px;
+}
+.shout_box .chat .open_btn {
+    background: rgba(0, 0, 0, 0) url("images/close_btn.png") no-repeat scroll 0 -32px;
+    float: right;
+    height: 15px;
+    width: 15px;
+}
+.shout_box .chat .open_btn:hover {
+    background: rgba(0, 0, 0, 0) url("images/close_btn.png") no-repeat scroll 0 -48px;
+}
+.shout_box .chat {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(0, 39, 121, 0.76) rgba(0, 39, 121, 0.76) -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #fff;
+    cursor: pointer;
+    font: bold 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+    padding: 5px 3px 5px 5px;
+}
+.shout_box .chat:hover {
+    background-color: #627bae;
+}
+.shout_box .message_box {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    height: 200px;
+    overflow: auto;
+}
+.shout_msg {
+    background-color: #e5e9ec;
+    border-bottom: 1px solid #f3f3f3;
+    border-radius: 7px;
+    color: #7c7c7c;
+    display: block;
+    float: left;
+    font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 0 5px 5px;
+    width: 55%;
+}
+.message_box:last-child {
+    border-bottom: medium none;
+}
+time {
+    color: #d5d5d5;
+    float: right;
+    font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.shout_msg .username {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.user_info input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+    height: 25px;
+    padding: 3px 0 0 3px;
+    width: 100%;
+}
+.shout_msg .username {
+    display: block;
+    font-weight: bold;
+}
+
+.close_btn {
+    float: right;
+    width: 38%;
+}
+
+
+.shout_izq {
+    background-color: #0ba195;
+    border-radius: 7px;
+    color: #fff;
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 3%;
+    padding: 0 5px 5px;
+    width: 50%;
+}
+.message {
+    float: left;
+    white-space: normal;
+    width: 88%;
+    word-wrap: break-word;
+}
+
+
+        .videoContainer{
+            max-width: 100%;
+        }
+
+        #remotes .videoContainer video{
+            max-height:214px;
+            max-width: 100%;
+        }
+        .videoContainer.profesor{
+            min-height:500px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top:0;
+        }
+        .videoContainer.profesor video{
+            min-height:500px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top:80px;
+        }
+        #profesor > div{
+            width:100%;
+            height:100%;
+        }
+        #profesor div.tiles.green{
+            max-height:100% !important;
+        }
+
+        video{
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .sprite {
+            display: inline-block;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-image: url('assets/img/drawpad.png');
+            float:left;
+            margin-right:10px;
+        }
+        .draw {
+            width: 42px;
+            height: 43px;
+            background-position: -222px -2px
+        }
+        .line {
+            width: 42px;
+            height: 43px;
+            background-position: -178px -2px
+        }
+        .trash {
+            width: 42px;
+            height: 43px;
+            background-position: -46px -2px
+        }
+        .erase {
+            width: 42px;
+            height: 43px;
+            background-position: -2px -2px
+        }
+        .toolbar {
+            #position: absolute;
+            padding: 0;
+            margin: 0;
+            z-index : 4;
+        }
+        .toolbar li {
+            display: block;
+            list-style: none;
+            margin-bottom: 10px;
+            border: 2px solid #000;
+            background-color: #d9dadb;
+            cursor: pointer;
+        }
+
+        .toolbar li.selected,.toolbar li.hover {
+            border: 4px solid #000;
+        }
+
+        .sharedCanvas, .myCanvas {
+            border: 2px solid #ccc;
+            #position: absolute;
+            z-index: 2;
+            background: white;
+        }
+        #scratchId{
+            display:none;
+        }
+        .sharedCanvas {
+            border: 2px solid transparent;
+            z-index: 1;
+        }
+
+        .userList {
+            margin: 0;
+            padding: 0;
+        }
+        .userList li {
+            cursor: pointer;
+            padding:10px !important;
+            border-bottom:1px dotted #000;
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .userList li:hover{
+            background-color:#f5f5f5;
+        }
+        .userList li:last-child{
+            border-bottom:0;
+        }
+        .alert-block{
+            position: absolute;
+            z-index: 5;
+        }
+
+        .btn-default{
+            float:right;
+        }
+
+        .alert{
+            padding: 8px 21px 8px 15px;
+        }
+        #whiteboard-canvas{
+            #width: 100% !important;
+            #height: 100% !important;
+        }
+        #drawingPad{
+            overflow:scroll;
+        }
+
+.btn-cons {
+    margin-right: 1% !important;
+    min-width: 8% !important;
+}
+.preg {
+
+   max-height: 214px;
+
+    margin-bottom: 4%;
+
+    overflow-y: scroll;
+
+}
+
+#profesor video {
+    max-width: 100%;
+}

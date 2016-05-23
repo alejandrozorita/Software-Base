@@ -679,6 +679,15 @@
 .fa-arrows-alt:before {
   content: "\f0b2";
 }
+.fa-pacientes:before {
+  background-image: url('../../../assets/img/icon/pacientes.png');
+}
+.fa-mensajes:before {
+  background-image: url('../../../img/icon/mensajes.png');
+}
+.fa-documentos:before {
+  background-image: url('../../../img/icon/documetos.png');
+}
 .fa-group:before,
 .fa-users:before {
   content: "\f0c0";

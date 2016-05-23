@@ -36,14 +36,20 @@
 				} else {
 					superbox.insertAfter(this).css('display', 'block');
 				}
-				
-				$('html, body').animate({
-					scrollTop:superbox.position().top - currentimg.width()
-				}, 'medium');
-			
+	
 			});
 						
 			$('.superbox').on('click', '.superbox-close', function() {
+				$('.superbox-current-img').animate({opacity: 0}, 200, function() {
+					$('.superbox-show').slideUp();
+				});
+			});
+			$('.superbox1').on('click', '.superbox-close', function() {
+				$('.superbox-current-img').animate({opacity: 0}, 200, function() {
+					$('.superbox-show').slideUp();
+				});
+			});
+			$('.superbox2').on('click', '.superbox-close', function() {
 				$('.superbox-current-img').animate({opacity: 0}, 200, function() {
 					$('.superbox-show').slideUp();
 				});

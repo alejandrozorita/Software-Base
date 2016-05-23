@@ -24,9 +24,10 @@ Route::get('/s', function () {
 | Agrupamos todas las rutas de control de sesión
 |
 */
-Route::auth();
-Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
-
+Route::group(['middleware' => 'web'], function () {
+	Route::auth();
+	Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
+});
 
 
 
@@ -40,7 +41,6 @@ Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
 |
 */
 Route::group(['middleware' => 'auth'], function () {
-
     /*
 	|--------------------------------------------------------------------------
 	| Rutas para los ficheros
@@ -53,6 +53,4 @@ Route::group(['middleware' => 'auth'], function () {
 	*/
 
 	Route::resource('ficheros', 'FileController');
-	
-
 });
