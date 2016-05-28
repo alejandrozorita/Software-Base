@@ -18,6 +18,9 @@
 	<div class='col-md-4'>
 		{!! Form::submit('Subir', ['class' => 'btn btn-primary m-t-10']) !!}
 	</div>
+	<div class='col-md-4'>
+		<a href="{{ route('ficheros.index') }}" class="btn btn-primary">Volver</a>
+	</div>
 	
 	{!! Form::close() !!}
 </div>

@@ -1,6 +1,9 @@
 <?php
+namespace App\Repositorios;
 
-class FilesRepo {
+use App\File;
+
+class FileRepo {
 
 	public function buscar_todos()
 	{

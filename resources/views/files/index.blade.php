@@ -29,7 +29,13 @@
 							<td>{{ $fichero->asunto }}</td>
 							<td>{{ $fichero->cuerpo }}</td>
 							<td>{{ $fichero->tipo }}</td>
-							<td>{{ link_to_route('ficheros.edit','Editar', $parameters = $fichero, $attributes = ['class' => 'btn btn-primary  ']) }}</td>
+							<td>
+							<div class="btn-group-vertical">
+								{{ link_to_route('ficheros.edit','Editar', $parameters = $fichero, $attributes = ['class' => 'btn btn-primary  ']) }}
+								@include('files.borrar')
+							</div>
+								
+							</td>
 						</tr>
 						@endcan
 					@endforeach

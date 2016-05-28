@@ -12,15 +12,15 @@ use App\File;
 class FileController extends Controller
 {
 
-    //protected $filesRepo;
+    protected $fileRepo;
 
      /**
      *
      */
-    //public function __construct(FilesRepo $filesRepo)
-    //{ 
-    //    $this->filesRepo = $filesRepo;
-    //}
+    public function __construct(FileRepo $fileRepo)
+    { 
+        $this->fileRepo = $fileRepo;
+    }
 
 
     /**
@@ -30,9 +30,7 @@ class FileController extends Controller
      */
     public function index(Request $request)
     {
-        //$datos_vista['ficheros'] = $this->filesRepo->buscar_todos();
-
-        $datos_vista['ficheros'] = File::where('user_id', $request->user()->id)->get();
+        $datos_vista['ficheros'] = $this->fileRepo->buscar_usuario_enviado($request->user()->id);
 
         return view('files.index', compact('datos_vista'));
     }
@@ -113,8 +111,11 @@ class FileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($file)
     {
-        return 'destr';
+        $file = File::find($file);
+        $this->authorize('owner',$file);
+        $file->delete();
+        return redirect(route('ficheros.index'))->with('success', 'Fichero borrado correctamente'); 
     }
 }
